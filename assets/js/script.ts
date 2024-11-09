@@ -29,10 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  selectContainer.addEventListener("click", () => {
-    selectContainer.style.display = "none";
-  });
-
+  if (selectContainer) {   
+    selectContainer.addEventListener("click", () => {
+        selectContainer.style.display = "none";
+    });
+}
   const templateImages = document.querySelectorAll(".selectcontainer img");
 
   interface Resume {

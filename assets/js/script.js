@@ -18,9 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
             selectContainer.style.display = "flex";
         });
     }
-    selectContainer.addEventListener("click", () => {
-        selectContainer.style.display = "none";
-    });
+    if (selectContainer) {
+        selectContainer.addEventListener("click", () => {
+            selectContainer.style.display = "none";
+        });
+    }
     const templateImages = document.querySelectorAll(".selectcontainer img");
     const nameElement = document.getElementById("resume-name");
     function nameColor() {
