@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuMap - Create Resume</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="icon" href="assets/Images/favicon.ico" type="image/x-icon">
+    
+</head>
+
+<body>
+
+    <main class="main">
+
+        <header class="navbar">
+            <div class="container">
+                <nav class="navbar-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="/">
+                            <img src="assets/Images/logo.svg" alt="Logo" class="logo-image">
+                            <span class="logo-text">ResuMap</span>
+                        </a>
+                    </div>
+
+                    <!-- Overlay for mobile menu -->
+                    <div id="overlay" class="overlay hidden"></div>
+
+                    <!-- Navbar Links -->
+                    <div id="navLinks" class="nav-links hidden">
+                        <ul class="nav-list">
+                            <li><a href="/#about" class="nav-item">About Us</a></li>
+                            <li><a href="/#features" class="nav-item">Features</a></li>
+                            <li><a href="/#contact" class="nav-item">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Hamburger Icon for mobile -->
+                    <button id="hamburger" class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+
+        <section class="container create">
+
+            <div class="create-resume">
+                <div class="sideImage">
+                    <img src="assets/Images/pic.jpg" alt="">
+                </div>
+                <div class="resume-main-container">
+                    <div class="resume-form">
+                        <div class="progress-container">
+                            <div class="progress-segment" id="segment-1"></div>
+                            <div class="progress-segment" id="segment-2"></div>
+                            <div class="progress-segment" id="segment-3"></div>
+                            <div class="progress-segment" id="segment-4"></div>
+                            <div class="progress-segment" id="segment-5"></div>
+                            <div class="progress-segment" id="segment-6"></div>
+                        </div>
+                        <div class="form-section">
+                            <div class="form-slide">
+                                <div class="section">
+                                    <div class="cv-title">
+                                        <h3>About Section</h3>
+                                    </div>
+
+                                    <div class="cv-about">
+                                        <div class="col-2">
+                                            <div class="form-element">
+                                                <label for="firstName" class="form-label">First Name</label>
+                                                <input type="text" id="firstName" class="form-control"
+                                                    placeholder="eg: John">
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="lastName" class="form-label">Last Name</label>
+                                                <input type="text" id="lastName" class="form-control"
+                                                    placeholder="eg: Doe">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <div class="form-element">
+                                                <label for="designation" class="form-label">Designation</label>
+                                                <input type="text" id="designation" class="form-control"
+                                                    placeholder="eg: Sr.Developer">
+                                            </div>
+
+                                            <div class="form-element">
+                                                <label for="Address" class="form-label">Address</label>
+                                                <input type="text" id="Address" class="form-control"
+                                                    placeholder="eg: 123, xyz road.">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <div class="form-element">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" id="email" class="form-control"
+                                                    placeholder="eg: johndoe@gmail.com">
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="phoneno" class="form-label">Phone no.</label>
+                                                <input type="text" id="phoneno" class="form-control"
+                                                    placeholder="eg: +92 334 XXXXXXX">
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="form-element">
+                                                <label for="link" class="form-label">Link</label>
+                                                <input type="text" id="link" class="form-control"
+                                                    placeholder="eg: www.johndoe.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-slide">
+                                <div class="section">
+                                    <div class="cv-title">
+                                        <h3>Summary/Objective</h3>
+                                    </div>
+
+                                    <div class="cv-about">
+                                        <div class="col">
+                                            <div class="form-element">
+                                                <label for="summary" class="form-label">Summary</label>
+                                                <br>
+                                                <textarea id="summary" rows="6" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-slide">
+                                <div class="section">
+                                    <div class="cv-title">
+                                        <h3>Education</h3>
+                                    </div>
+
+                                    <div id="repeat-col-education" class="repeat-col">
+                                        <div class="col">
+                                            <div class="form-element">
+                                                <label for="institute" class="form-label">Institute</label>
+                                                <input type="text" id="institute" class="form-control instituteClass"
+                                                    placeholder="eg: High School">
+                                            </div>
+
+                                            <div class="form-element">
+                                                <label for="field" class="form-label">Field</label>
+                                                <input type="text" id="field" class="form-control fieldClass"
+                                                    placeholder="eg: Bachelor of Science">
+                                            </div>
+
+                                            <div class="form-element">
+                                                <label for="peroid" class="form-label">Duration</label>
+                                                <input type="text" id="peroid" class="form-control peroidClass"
+                                                    placeholder="eg: 2001 - 2005">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button id="add-btn-education">+</button>
+                                </div>
+                            </div>
+
+                            <div class="form-slide">
+                                <div class="section">
+                                    <div class="cv-title">
+                                        <h3>Work Experience</h3>
+                                    </div>
+
+                                    <div id="repeat-col-work" class="repeat-col">
+                                        <div class="col">
+                                            <div class="form-element">
+                                                <label for="company" class="form-label">Company</label>
+                                                <input type="text" id="company" class="form-control"
+                                                    placeholder="eg: Microsoft">
+                                            </div>
+
+                                            <div class="form-element">
+                                                <label for="designations" class="form-label">Designation</label>
+                                                <input type="text" id="designation" class="form-control"
+                                                    placeholder="eg: Sr. Developer">
+                                            </div>
+
+                                            <div class="form-element">
+                                                <label for="durations" class="form-label">Duration</label>
+                                                <input type="text" id="duration" class="form-control"
+                                                    placeholder="eg: 2001 - 2005">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button id="add-btn-work">+</button>
+                                </div>
+                            </div>
+
+                            <div class="form-slide">
+                                <div class="section">
+                                    <div class="cv-title">
+                                        <h3>Skills</h3>
+                                    </div>
+
+                                    <div class="cv-about">
+                                        <div class="col">
+                                            <div class="form-element">
+                                                <label for="skills" class="form-label">Skills (press "Enter" after each
+                                                    skill)</label>
+                                                <input type="text" id="skills" class="form-control skills"
+                                                    placeholder="Enter a skill and press Enter">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-slide">
+                                <div class="section">
+                                    <div class="cv-title">
+                                        <h3>Languages</h3>
+                                    </div>
+
+                                    <div class="cv-about">
+                                        <div class="col">
+                                            <div class="form-element">
+                                                <label for="skills" class="form-label">Languages (press "Enter" after
+                                                    each
+                                                    language)</label>
+                                                <input type="text" id="lang" class="form-control languages"
+                                                    placeholder="Enter a language and press Enter">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nav-btns">
+                            <button id="prev-btn"><i class="ri-arrow-left-s-line"></i> Previous</button>
+                            <button id="next-btn">Next <i class="ri-arrow-right-s-line"></i></button>
+                            <button class="show-resume" id="show-resume">Generate Resume </button>
+
+                        </div>
+                    </div>
+
+                    <div class="preview-container">
+                        <div class="resume-container">
+
+                        </div>
+
+                        <div class="change">
+                            Change Template:
+                        </div>
+                        
+
+                        <div class="nav-btn">
+                            <button id="edit">Edit <i class="ri-file-edit-line"></i></button>
+                            <button id="download-btn">Download <i class="ri-download-2-line"></i></button>
+                            <button id="print" onclick="window.print()">Print <i class="ri-printer-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="/" class="logo-link">
+                        <img src="assets/Images/logo.svg" alt="Logo" class="logo-image">
+                        <span class="logo-text">ResuMap</span>
+                    </a>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#features" class="footer-link">Features</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-rights">
+                ©<span id="current-year"></span>
+                <a href="#" target="_blank" class="footer-author">Muhammad Zaeem
+                    Altaf</a>. All Rights Reserved.
+            </p>
+        </footer>
+    </main>
+
+
+    <div class="selectcontainer">
+        <div>
+            <img src="assets/Images/templete 1.jpg" alt="Template 1" class="active" data-template="templete1">
+            <img src="assets/Images/templete 2.jpg" alt="Template 2" data-template="templete2">
+            <img src="assets/Images/templete 3.jpg" alt="Template 2" data-template="templete3">
+        </div>
+    </div>
+    
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="assets/js/templetes.js" type="module"></script>
+    <script src="assets/js/script.js" type="module"></script>
+    <script>
+        const downloadBtn = document.getElementById("download-btn");
+
+        downloadBtn.addEventListener("click", downloadResume);
+
+        function downloadResume() {
+            const resumeElement = document.querySelector(".resume-container .resume .main-content");
+
+            // Add a class to mimic the @media print styles
+            requestAnimationFrame(() => {
+                // Use setTimeout to ensure that the class change is rendered
+                setTimeout(() => {
+                    const opt = {
+                        filename: 'resume.pdf',
+                        image: { type: 'jpeg', quality: 0.98 },
+                        html2canvas: { scale: 2 },
+                        jsPDF: { unit: 'mm', format: 'A4', orientation: 'portrait' }
+                    };
+
+                    // Using html2pdf to download the resume section as PDF
+                    html2pdf().from(resumeElement).set(opt).save().then(() => {
+                        // Remove the class after PDF download
+                    });
+                }, 500); // Adjust the timeout duration if needed
+
+            });
+        }
+
+    </script>
+</body>
+
+</html>

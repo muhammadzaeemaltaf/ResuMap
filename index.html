@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuMap</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" href="assets/Images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <main>
+
+        <header class="navbar">
+            <div class="container">
+                <nav class="navbar-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="/">
+                            <img src="assets/Images/logo.svg" alt="Logo" class="logo-image">
+                            <span class="logo-text">ResuMap</span>
+                        </a>
+                    </div>
+
+                    <!-- Overlay for mobile menu -->
+                    <div id="overlay" class="overlay hidden"></div>
+
+                    <!-- Navbar Links -->
+                    <div id="navLinks" class="nav-links hidden">
+                        <ul class="nav-list">
+                            <li><a href="#about" class="nav-item">About Us</a></li>
+                            <li><a href="#features" class="nav-item">Features</a></li>
+                            <li><a href="#contact" class="nav-item">Contact Us</a></li>
+                        </ul>
+                        <div class="action-button-container">
+                            <a id="actionButton" href="create.html" class="action-button">Get Started</a>
+                        </div>
+                    </div>
+
+                    <!-- Hamburger Icon for mobile -->
+                    <button id="hamburger" class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <!-- Background Gradient Elements -->
+                <div class="gradient-circle-top"></div>
+                <div class="gradient-center"></div>
+                <div class="gradient-circle-bottom"></div>
+
+                <!-- Content -->
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Build Your Professional
+                        <span class="hero-highlight">Resume</span>
+                    </h1>
+                    <p class="hero-description">
+                        Create a customized, professional resume in minutes. Our intuitive platform allows you to
+                        design,
+                        edit, and download a resume that stands out. Start building your career with a resume tailored
+                        to
+                        your skills and experience.
+                    </p>
+                    <a href="create.html" target="_blank" class="signup-button">
+                        <span class="signup-gradient"></span>
+                        <span class="signup-text">Get Started</span>
+                    </a>
+                </div>
+
+                <!-- Image Section -->
+                <div class="hero-image-container">
+                    <img src="assets/Images/pic.jpg" alt="Hero image" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us-section" id="about">
+            <h1 class="hero-title">
+                About Us
+            </h1>
+            <div class="about-us">
+                <div class="about-us__image">
+                    <img src="assets/Images/about.jpeg" alt="about-us image " />
+                </div>
+                <div class="about-us__content">
+                    <p>
+                        At <strong>ResuMap</strong>, we simplify the resume creation process, empowering individuals to
+                        design
+                        professional,
+                        tailored resumes that leave a lasting impression. Our platform guides job seekers through every
+                        step,
+                        from layout selection to content suggestions, allowing them to focus on showcasing their unique
+                        skills
+                        and experiences rather than worrying about technical formatting details.
+                    </p>
+                    <p>
+                        With features like customizable templates and live preview options, <strong>ResuMap</strong>
+                        offers
+                        a reliable,
+                        user-friendly environment for professionals and students alike. We are committed to making
+                        resume
+                        building simple, efficient, and enjoyable, helping users craft resumes that align with their
+                        career
+                        goals. More than just a tool, <strong>ResuMap</strong> is your partner in career success,
+                        supporting
+                        you in making a
+                        strong, memorable impact in today’s competitive job market.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div id="features" class="features-section">
+            <div class="container">
+                <!-- Text -->
+                <div class="text-section">
+                    <h2 class="hero-title">Our Features</h2>
+                    <p>Choose from a variety of professionally designed templates to showcase your skills effectively.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="icon">
+                            <!-- Templates Icon -->
+                            <svg fill="#ffffff" height="200px" width="200px" version="1.1" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="-44.81 -44.81 313.66 313.66" xml:space="preserve" stroke="#ffffff">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <path
+                                            d="M210.436,58.309l-7.416-2.041v-4.139c0-10.749-8.085-19.933-18.834-19.933H148.02V30.23c0-8.148-2.934-15.737-8.565-21.367 C133.74,3.147,126.258,0,118.236,0c-8.041,0-15.576,3.147-21.292,8.863c-4.069,4.068-6.804,9.098-8.055,14.578l-27.511-7.9 c-1.162-0.333-2.356-0.519-3.559-0.519c-5.777,0-10.92,3.643-12.51,9.186l-2.347,7.987h-2.239 c-10.749,0-19.703,9.184-19.703,19.933v55.247L4.822,164.638c-1.976,6.89,1.879,14.103,8.768,16.077l7.43,2.156v4.024 c0,10.749,8.954,19.3,19.703,19.3h62.003l60.593,17.374c1.162,0.333,2.361,0.476,3.565,0.476c5.777,0,10.922-3.982,12.511-9.525 l2.383-8.325h2.408c10.749,0,18.834-8.551,18.834-19.3v-56.47l16.205-56.04C221.201,67.496,217.326,60.283,210.436,58.309z M102.646,27.164c0.605-2.99,2.147-5.713,4.5-8.067c2.95-2.949,6.903-4.519,11.131-4.52c4.194,0,8.128,1.652,11.078,4.603 c3.011,3.012,4.603,6.58,4.603,10.714l0.003,2.302h-13.021L102.646,27.164z M42.02,53.195h46.159l0.032,19.179l0.011,0.353 c0.418,4.989,2.401,9.749,5.957,13.303c4.019,4.02,8.841,6.259,14.841,6.259v0.013c6-0.001,11.223-2.21,15.245-6.233 c4.022-4.022,6.341-9.36,6.341-15.057c-0.046-5.942-0.111-7.59-0.196-8.185c-0.383-3.696-3.408-6.466-7.128-6.466 c-3.723,0-6.759,2.771-7.139,6.47c-0.086,0.609-0.169,2.248-0.072,8.207c0,1.77-0.689,3.436-1.946,4.693 c-1.258,1.258-2.924,1.95-4.694,1.951c-1.859,0-3.863-0.728-5.082-1.946c-1.375-1.376-2.33-3.081-2.33-4.678V53.195h80v132h-140 V53.195z">
+                                        </path>
+                                        <path
+                                            d="M171.02,116.437c0-6.761-5.48-12.241-12.24-12.241H66.26c-6.76,0-12.24,5.481-12.24,12.241v0.518 c0,6.761,5.48,12.241,12.24,12.241h92.52c6.76,0,12.24-5.481,12.24-12.241V116.437z">
+                                        </path>
+                                        <path
+                                            d="M171.02,156.437c0-6.761-5.48-12.241-12.24-12.241H66.26c-6.76,0-12.24,5.481-12.24,12.241v0.518 c0,6.761,5.48,12.241,12.24,12.241h92.52c6.76,0,12.24-5.481,12.24-12.241V156.437z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3>Professional Templates</h3>
+                        <p>Choose from a variety of professionally designed templates to showcase your skills
+                            effectively.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="icon">
+                            <!-- Download Icon -->
+                            <svg fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="-98.3 -98.3 688.12 688.12" xml:space="preserve" stroke="#ffffff">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M362.645,0L92.16,0.02v51.191L30.72,51.22v440.3H409.6v-61.44h51.2V98.16L362.645,0z M368.64,34.956l57.201,57.204H368.64 V34.956z M389.12,471.04H51.2V71.7l40.96-0.008V430.08h296.96V471.04z M440.32,409.6H112.64V20.5l235.52-0.019v92.159h92.16V409.6 z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M307.2,194.56V61.44h-81.92v133.12h-55.44l96.4,96.4l96.4-96.4H307.2z M219.28,215.04h26.48V81.92h40.96v133.12h26.48 L266.24,262L219.28,215.04z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M368.64,225.28v81.92c0,11.29-9.185,20.48-20.48,20.48H184.32c-11.295,0-20.48-9.19-20.48-20.48v-81.92h-20.48v81.92 c0,22.59,18.375,40.96,40.96,40.96h163.84c22.585,0,40.96-18.37,40.96-40.96v-81.92H368.64z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3>Download Options</h3>
+                        <p>Download your resume in multiple formats, including PDF, DOCX, and TXT for easy sharing.</p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="icon">
+                            <!-- Customization Icon -->
+                            <svg fill="#ffffff" viewBox="-6.4 -6.4 44.80 44.80" id="icon"
+                                xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: none;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>chart--custom</title>
+                                    <path
+                                        d="M29.707,19.293l-3-3a.9994.9994,0,0,0-1.414,0L16,25.5859V30h4.4141l9.2929-9.293A.9994.9994,0,0,0,29.707,19.293ZM19.5859,28H18V26.4141l5-5L24.5859,23ZM26,21.5859,24.4141,20,26,18.4141,27.5859,20Z">
+                                    </path>
+                                    <rect x="17" y="15" width="4" height="2" transform="translate(3 35) rotate(-90)">
+                                    </rect>
+                                    <rect x="12" y="14" width="6" height="2" transform="translate(0 30) rotate(-90)">
+                                    </rect>
+                                    <rect x="6" y="12" width="10" height="2" transform="translate(-2 24) rotate(-90)">
+                                    </rect>
+                                    <path
+                                        d="M12,30H6a2.0021,2.0021,0,0,1-2-2V4A2.0021,2.0021,0,0,1,6,2H22a2.0021,2.0021,0,0,1,2,2V14H22V4H6V28h6Z">
+                                    </path>
+                                    <rect id="_Transparent_Rectangle_" data-name="Transparent Rectangle" class="cls-1"
+                                        width="32" height="32"></rect>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3>Easy Customization</h3>
+                        <p>Effortlessly customize your resume with drag-and-drop features and real-time editing options.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="contact" class="py-24">
+            <div class="    container">
+                <div class="grid">
+                    <div class="form-container">
+                        <h1 class="contact-title">Contact Us</h1>
+                        <h2 class="contact-subtitle">Reach Out To Us</h2>
+                        <form id="contactForm">
+                            <input type="text" id="senderName" placeholder="Name" required>
+                            <input type="email" id="senderEmail" placeholder="Email" required>
+                            <textarea id="message" placeholder="Message" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <a href="tel:+923452793244" class="contact-link">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.3092 18.3098C22.0157 18.198 21.8689 18.1421 21.7145 18.1287C21.56 18.1154 21.4058 18.1453 21.0975 18.205L17.8126 18.8416C17.4392 18.9139 17.2525 18.9501 17.0616 18.9206C16.8707 18.891 16.7141 18.8058 16.4008 18.6353C13.8644 17.2551 12.1853 15.6617 11.1192 13.3695C10.9964 13.1055 10.935 12.9735 10.9133 12.8017C10.8917 12.6298 10.9218 12.4684 10.982 12.1456L11.6196 8.72559C11.6759 8.42342 11.7041 8.27233 11.6908 8.12115C11.6775 7.96998 11.6234 7.82612 11.5153 7.5384L10.6314 5.18758C10.37 4.49217 10.2392 4.14447 9.95437 3.94723C9.6695 3.75 9.29804 3.75 8.5551 3.75H5.85778C4.58478 3.75 3.58264 4.8018 3.77336 6.06012C4.24735 9.20085 5.64674 14.8966 9.73544 18.9853C14.0295 23.2794 20.2151 25.1426 23.6187 25.884C24.9335 26.1696 26.0993 25.1448 26.0993 23.7985V21.2824C26.0993 20.5428 26.0993 20.173 25.9034 19.8888C25.7076 19.6046 25.362 19.4729 24.6708 19.2096L22.3092 18.3098Z"
+                                        stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span class="contact-text">+92-3452793244</span>
+                            </a>
+                            <a href="mailto:official.zaeemaltaf@gmail.com" class="contact-link">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.81501 8.75L10.1985 13.6191C12.8358 15.2015 14.1544 15.9927 15.6032 15.9582C17.0519 15.9237 18.3315 15.0707 20.8905 13.3647L27.185 8.75M12.5 25H17.5C22.214 25 24.5711 25 26.0355 23.5355C27.5 22.0711 27.5 19.714 27.5 15C27.5 10.286 27.5 7.92893 26.0355 6.46447C24.5711 5 22.214 5 17.5 5H12.5C7.78595 5 5.42893 5 3.96447 6.46447C2.5 7.92893 2.5 10.286 2.5 15C2.5 19.714 2.5 22.0711 3.96447 23.5355C5.42893 25 7.78595 25 12.5 25Z"
+                                        stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                <span class="contact-text">official.zaeemaltaf@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="/" class="logo-link">
+                        <img src="assets/Images/logo.svg" alt="Logo" class="logo-image">
+                        <span class="logo-text">ResuMap</span>
+                    </a>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#features" class="footer-link">Features</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-rights">
+                ©<span id="current-year"></span>
+                <a href="#" target="_blank" class="footer-author">Muhammad Zaeem
+                    Altaf</a>. All Rights Reserved.
+            </p>
+        </footer>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="assets/js/templetes.js" type="module"></script>
+    <script src="assets/js/script.js" type="module"></script>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>
