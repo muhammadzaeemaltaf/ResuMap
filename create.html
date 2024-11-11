@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="icon" href="assets/Images/favicon.ico" type="image/x-icon">
-    
+
 </head>
 
 <body>
@@ -260,7 +260,7 @@
                         <div class="change">
                             Change Template:
                         </div>
-                        
+
 
                         <div class="nav-btn">
                             <button id="edit">Edit <i class="ri-file-edit-line"></i></button>
@@ -306,8 +306,8 @@
             <img src="assets/Images/templete 3.jpg" alt="Template 2" data-template="templete3">
         </div>
     </div>
-    
-    
+
+
 
 
 
@@ -317,29 +317,27 @@
     <script src="assets/js/script.js" type="module"></script>
     <script>
         const downloadBtn = document.getElementById("download-btn");
-
         downloadBtn.addEventListener("click", downloadResume);
 
         function downloadResume() {
-            const resumeElement = document.querySelector(".resume-container .resume .main-content");
+            const resumeContainer = document.querySelector(".resume-container .resume");
 
-            // Add a class to mimic the @media print styles
-            requestAnimationFrame(() => {
-                // Use setTimeout to ensure that the class change is rendered
-                setTimeout(() => {
-                    const opt = {
-                        filename: 'resume.pdf',
-                        image: { type: 'jpeg', quality: 0.98 },
-                        html2canvas: { scale: 2 },
-                        jsPDF: { unit: 'mm', format: 'A4', orientation: 'portrait' }
-                    };
+            const activeTemplateImg = document.querySelector(".selectcontainer img.active");
+            const templateClass = activeTemplateImg ? activeTemplateImg.getAttribute("data-template") : null;
 
-                    // Using html2pdf to download the resume section as PDF
-                    html2pdf().from(resumeElement).set(opt).save().then(() => {
-                        // Remove the class after PDF download
-                    });
-                }, 500); // Adjust the timeout duration if needed
+            if (templateClass) {
+                resumeContainer.classList.add(templateClass);
+            }
 
+            const opt = {
+                filename: 'resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'A4', orientation: 'portrait' }
+            };
+
+            // Generate PDF
+            html2pdf().from(resumeContainer).set(opt).save().then(() => {
             });
         }
 
